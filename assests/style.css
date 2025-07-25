@@ -1,0 +1,195 @@
+body {
+  background: linear-gradient(to left, #FFF9E9, #5A8100);
+  width: 100%;
+
+}
+
+#overlay {
+  background-color: aliceblue;
+  position: fixed;
+  width: 50%;
+  height: 85%;
+  margin: 5em;
+  margin-bottom: 20%;
+  margin-left: 23%;
+  margin-top: 70px;
+  border-radius: 10px;
+
+}
+
+form {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  padding: 1.6em;
+  padding-top: 0;
+}
+
+input {
+  margin: 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  width: 65%;
+  border-radius: 10px;
+  border-color: white;
+  opacity: 0.5;
+}
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  color: #040505;
+  margin-top: 10px;
+}
+
+h4:before,
+h4:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #8b8989;
+  margin: 10px;
+}
+
+#logo {
+  margin-left: 12em;
+  margin-top: 0, 5px;
+}
+
+.floating-icon1 {
+  animation: float 2s ease-in-out infinite;
+  position: absolute;
+  rotate: -25deg;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.floating-icon2 {
+  animation: float 2s ease-in-out infinite;
+  position: absolute;
+  rotate: 20deg;
+}
+
+.floating-icon3 {
+  animation: float 2s ease-in-out infinite;
+  position: absolute;
+  rotate: 8deg;
+}
+
+.submit {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  height: 50px;
+  width: 100px;
+  background-color: #FF6C02;
+  color: rgb(5, 12, 19);
+  opacity: 100;
+  border: 0;
+  border-radius: 10px;
+  transition: 1s all;
+  margin: 0;
+  margin-left: 15em;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: #5A8100;
+  color: aliceblue;
+  border: 0;
+  border-radius: 10px;
+  transition: 1s all;
+  box-shadow: #6f7070 10x 10px;
+}
+
+/*Mobiles*/
+@media (max-width: 768px) {
+  #overlay {
+    width: 90%;
+    margin: 2em auto;
+    height: auto;
+    position: static;
+    padding: 1.5em;
+  }
+
+  #logo {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+  }
+
+  input {
+    width: 90%;
+    margin: 1em auto;
+    display: block;
+  }
+
+  .submit {
+    width: 100%;
+    margin: 1.5em auto;
+    display: block;
+  }
+
+  .floating-icon1,
+  .floating-icon2,
+  .floating-icon3 {
+    display: none;
+  }
+
+  form {
+    padding: 0.5em;
+    font-size: 16px;
+  }
+}
+
+/*Tablets*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  #overlay {
+    width: 70%;
+    margin: 4em auto;
+    height: auto;
+    padding: 2em;
+  }
+
+  #logo {
+    margin: 0 auto 1em auto;
+    display: block;
+  }
+
+  input {
+    width: 85%;
+  }
+
+  .submit {
+    margin-left: 35%;
+  }
+}
+
+/*TVs*/
+@media (min-width: 1025px) {
+  #overlay {
+    width: 50%;
+  }
+
+  input {
+    width: 65%;
+  }
+
+  .submit {
+    margin-left: 15em;
+  }
+}

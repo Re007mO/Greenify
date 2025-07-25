@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenify🍃</title>
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lilita+One&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <img class="floating-icon1" src="./assests/images/WhatsApp_Image_2025-07-22_at_1.58.19_PM__5_-removebg-preview.png" width="200" style="top: 30px;" alt="icon">
+    <img class="floating-icon3" src="./assests/images/WhatsApp_Image_2025-07-22_at_1.58.1_PM__2_-removebg-preview.png" width="200" style="left: 100px; top: 400px;"  alt="icon">
+    <img class="floating-icon2" src="./assests/images/WhatsApp_Image_2025-07-22_at_1.58.19_PM__1_-removebg-preview.png" width="200" alt="icon" style="left: 1090px; top: 400px;">
+    <img class="floating-icon2" src="./assests/images/recycle-bin-3d-icon-download-in-png-blend-fbx-gltf-file-formats--recycling-waste-trash-garbage-plant-ecology-pack-nature-icons-8933683.png" width="200" alt="icon" style="left: 1090px; top: 60px; rotate: -8deg;">
+    <div id="overlay">
+        <img id="logo" src="./assests/images/WhatsApp_Image_2025-07-22_at_1.58.20_PM-removebg-preview.png" alt="logo" width="200">
+
+        <form>
+            <h4 style="font-weight: 400; margin-top: 0;">Create an account</h1>
+            <label for="name">Name:</label><input id="user" type="text" placeholder="Enter your name"><br>
+            <label for="email">Email:</label><input type="text" placeholder="Enter your Email"><br>
+            <label for="age">Age:</label><input type="number" style="width: 100px;"><br>
+            <label for="password">Password:</label><input type="password" placeholder="Enter your Password"><br>
+<button class="submit" type="button" onclick="saveUser()">Submit</button>
+            <h4>Or</h4>
+            <p>Already Have Account?<a href="home.html" style="color: #5A8100;">Sign In</a></p>
+
+        </form>
+    </div>
+
+
+    <script src="./assests/app.js"></script>
+    <script>
+function saveUser() {
+    const name = document.getElementById('user').value;
+    if (name.trim()) {
+        localStorage.setItem('userName', name);
+    }
+    window.location.href = "home.html";
+}
+    </script>
+</body>
+
+</html>

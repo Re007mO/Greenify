@@ -1,0 +1,370 @@
+body {
+    background: linear-gradient(to left, #FFF9E9, #5A8100);
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    height: auto;
+}
+
+
+#overlay2 {
+    background-color: aliceblue;
+    width: 95%;
+    height: 1500px;
+    margin: 5em;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.navBtn {
+    background-color: aliceblue;
+    border: 0;
+    transition: 0.5s ease all;
+
+}
+
+.navBtn:hover {
+    background-color: #FF6C02;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    transition: 0.5s ease all;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 25px;
+}
+
+.slide-in {
+    position: relative;
+    transform: translateX(100%);
+    transition: transform 2s ease-out;
+    background: #4caf50;
+    color: white;
+    padding: 20px;
+    width: fit-content;
+}
+
+/* When active class is added, it moves into view */
+.slide-in.active {
+    transform: translateX(100%);
+    transition: transform 2s ease-out;
+
+}
+
+.background {
+    border-radius: 20px;
+    width: 98%;
+    height: 450px;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+#welcome {
+    animation: both;
+    font-family: "Playwrite FR Moderne", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    bottom: 3em;
+    padding-left: 70px;
+    font-size: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: 0.2s;
+    /* Wait 0.5s before animating */
+}
+
+#welcome.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#intro {
+    font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    color: #0a0303;
+    max-width: 800px;
+    margin-left: 70px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: 0.4s;
+    position: absolute;
+    bottom: 1em;
+}
+
+#intro.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.content {
+    width: 45%;
+    text-align: center;
+}
+
+.btnContent {
+    font-family: "Fredoka", sans-serif;
+
+    height: 50px;
+    width: 100px;
+    background-color: #f3a670;
+    color: rgb(5, 12, 19);
+    opacity: 100;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: 1s all;
+}
+
+.btnContent:hover {
+    background-color: #5A8100;
+    color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    transition: 1s all;
+    box-shadow: #6f7070 10x 10px;
+}
+
+#overlay3 {
+    background-color: aliceblue;
+    width: 95%;
+    height: 1000px;
+    margin: 5em;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#userName {
+    animation: both;
+    font-family: "Playwrite FR Moderne", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    padding-left: 530px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#userInfo {
+    display: flex;
+    margin-top: 10em;
+    gap: 300px;
+    margin-left: 150px;
+}
+
+#team {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10em;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.teamName {
+    font-family: "Playwrite FR Moderne", cursive;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+.about {
+    font-size: 20px;
+    color: #0f0c0c;
+
+}
+
+.userName {
+    flex-direction: row;
+
+
+}
+
+
+.about {
+    font-family: "Fredoka", sans-serif;
+    width: 350px;
+}
+
+#overlay4 {
+    background-color: aliceblue;
+    width: 95%;
+    height: 1500px;
+    margin: 5em;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* شاشة موبايل */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        float: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    #overlay2,
+    #overlay3 {
+        width: 95%;
+        margin: 1em auto;
+        height: auto;
+        padding: 1em;
+    }
+
+    .background {
+        height: auto;
+        width: 100%;
+    }
+
+    #welcome {
+        font-size: 35px;
+        padding-left: 20px;
+        bottom: 2em;
+    }
+
+    #intro {
+        font-size: 16px;
+        margin-left: 20px;
+        bottom: 1em;
+        position: static;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    #userInfo {
+        flex-direction: column;
+        align-items: center;
+        margin: 3em auto;
+        gap: 2em;
+    }
+
+    #userName {
+        padding-left: 0;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 1em;
+    }
+
+    img[alt="profile"] {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .btnContent {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* شاشة تابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #overlay2,
+    #overlay3 {
+        width: 90%;
+        margin: 3em auto;
+        height: auto;
+    }
+
+    .content {
+        width: 48%;
+    }
+
+    .btnContent {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #userInfo {
+        gap: 150px;
+        margin-left: 50px;
+    }
+}
+
+/* شاشة كبيرة */
+@media (min-width: 1025px) {
+
+    #overlay2,
+    #overlay3 {
+        max-width: 95%;
+    }
+
+    .content {
+        width: 45%;
+    }
+
+    .btnContent {
+        width: 100px;
+    }
+}
