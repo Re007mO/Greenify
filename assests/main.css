@@ -242,6 +242,16 @@ li a {
     border-radius: 10px;
 }
 
+#trusted h3 {
+    margin-left: 200px;
+}
+
+.profile {
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 500px;
+}
+
 /* شاشة موبايل */
 @media (max-width: 768px) {
     body {
@@ -324,6 +334,40 @@ li a {
         width: 100%;
         margin-left: 0;
     }
+
+    #welcome {
+        font-weight: 600;
+        font-style: normal;
+        position: absolute;
+        bottom: 7em;
+        padding-left: 70px;
+        font-size: 30px;
+
+
+    }
+
+    .imgContent {
+        width: 250px;
+    }
+
+    .profile {
+    width: 200px;
+    margin-left: 25%;
+
+    
+}
+#overlay4 {
+    height: 150%;
+    margin: 5em;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.about{
+    font-size: 15px;
+}
 }
 
 /* شاشة تابلت */
@@ -349,6 +393,10 @@ li a {
     #userInfo {
         gap: 150px;
         margin-left: 50px;
+    }
+
+    h3 {
+        margin-left: 0;
     }
 }
 
