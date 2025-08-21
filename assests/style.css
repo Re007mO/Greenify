@@ -3,8 +3,25 @@ body {
   width: 100%;
 
 }
+#body2 {
+  background: linear-gradient(to left, #FFF9E9, #fa9a56);
+  width: 100%;
+
+}
 
 #overlay {
+  background-color: aliceblue;
+  position: fixed;
+  width: 50%;
+  height: 85%;
+  margin: 5em;
+  margin-bottom: 20%;
+  margin-left: 23%;
+  margin-top: 70px;
+  border-radius: 10px;
+
+}
+#overlay2 {
   background-color: aliceblue;
   position: fixed;
   width: 50%;
@@ -102,6 +119,20 @@ h4:after {
   margin: 0;
   margin-left: 15em;
 }
+.submit2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  height: 50px;
+  width: 300px;
+  background-color: #5A8100;
+  color: rgb(5, 12, 19);
+  opacity: 100;
+  border: 0;
+  border-radius: 10px;
+  transition: 1s all;
+  margin: 0;
+  margin-left: 25%;
+}
 a{
   color: black;
   text-decoration: none;
@@ -115,12 +146,31 @@ a{
   transition: 1s all;
   box-shadow: #6f7070 10x 10px;
 }
+.submit2:hover {
+  background-color: #FF6C02;
+  color: aliceblue;
+  border: 0;
+  border-radius: 10px;
+  transition: 1s all;
+  box-shadow: #6f7070 10x 10px;
+}
 
+#in{
+  margin-left: 270px;
+  width: 70px;
+}
 /*Mobiles*/
 @media (max-width: 768px) {
   #overlay {
     width: 90%;
     margin: 2em auto;
+    height: auto;
+    position: static;
+    padding: 1.5em;
+  }
+  #overlay2 {
+    width: 70%;
+    margin-left:0 ;
     height: auto;
     position: static;
     padding: 1.5em;
@@ -143,6 +193,11 @@ a{
     margin: 1.5em auto;
     display: block;
   }
+  .submit2 {
+    width: 100%;
+    margin-left: 10px;
+    display: block;
+  }
 
   .floating-icon1,
   .floating-icon2,
@@ -154,6 +209,10 @@ a{
     padding: 0.5em;
     font-size: 16px;
   }
+  #in{
+  margin-left: 40%;
+  width: 50px;
+}
 }
 
 /*Tablets*/
